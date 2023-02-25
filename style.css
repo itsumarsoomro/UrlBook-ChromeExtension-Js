@@ -1,0 +1,110 @@
+*{
+       padding: 0;
+       margin: 0;
+       padding: 0px 0px;
+       font-family: 'Unbounded', cursive;
+       text-decoration: none;
+       /* list-style: none; */
+}
+body{
+       padding: 35px 30px;
+       min-width: 400px;
+      
+
+}
+#input-el{
+       width: 100%;
+       padding: 10px 36px;
+       box-sizing: border-box; 
+      
+       background: url("https://cdn-icons-png.flaticon.com/512/5828/5828471.png") no-repeat left;
+       background-size: 20px;
+       background-position: 7px 8px;
+
+       border-radius: 8px;
+}
+
+#input-btn{
+       padding: 12px 50px;
+       color: white;
+       background-color: rgb(93, 207, 125);
+       border: none;
+       cursor: pointer;
+       font-weight: bold;
+       /* margin-top: 20px; */
+       border-radius: 20px;
+       transition: all 0.5s;
+}
+
+#input-btn:hover{
+
+       background-color: rgb(81, 184, 110);
+       /* background-color: rgb(7, 209, 142); */
+}
+
+#ul-el{
+       margin-top: 20px;
+}
+
+ul, li,a {
+       color: rgb(55, 119, 73);
+       text-decoration: underline;
+       font-size: 18px;
+       padding: 2px 0px;
+       transition: all 0.5s;
+}
+
+ul, li, a:hover{
+
+       color: rgb(86, 192, 116);
+}
+
+#delete-btn{
+       padding: 5px 8px;
+       color: white;
+       background-color: #e60049;
+       border: none;
+       cursor: pointer;
+       font-weight: bold;
+       /* margin-top: 20px; */
+       border-radius: 100%;
+       transition: all 0.5s;
+       /* margin-left: 100px; */
+       transform: translate(10px, 6px);
+}
+
+#delete-btn:hover{
+
+       background-color: #b3043b;
+       /* background-color: rgb(7, 209, 142); */
+}
+.title{
+       display: flex;
+       position: relative;
+       text-align: center;
+       justify-content: center;
+}
+img.h1{
+       margin-top: 0px;
+       margin-left: 7px;
+       height: 33px;
+       width: 33px;
+}
+
+#savetab-btn{
+       padding: 12px 50px;
+       color: white;
+       background-color: rgb(50, 197, 92);
+       border: none;
+       cursor: pointer;
+       font-weight: bold;
+       /* margin-top: 20px; */
+       border-radius: 20px;
+       transition: all 0.5s;
+}
+
+#savetab-btn:hover{
+
+       background-color: rgb(81, 184, 110);
+       /* background-color: rgb(7, 209, 142); */
+}
