@@ -50,8 +50,8 @@ UrlBook is a simple and efficient Chrome Extension that helps users save and man
 UrlBook-ChromeExtension-Js/
 │
 ├── manifest.json    # Chrome extension configuration
-├── popup.html      # Popup HTML interface
-├── popup.js        # JavaScript logic for the popup
+├── index.html      # Popup HTML interface
+├── function.js        # JavaScript logic for the popup
 ├── styles.css      # Styling for the popup
 └── README.md       # Project documentation
 ```
@@ -66,15 +66,15 @@ UrlBook-ChromeExtension-Js/
 ### Example Code Snippet
 
 ```javascript
-// popup.js - Function to save the current tab URL
-function saveCurrentTabUrl() {
-    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-        const url = tabs[0].url;
-        urls.push(url);
-        chrome.storage.local.set({ urls });
-        renderUrls();
-    });
-}
+// function.js - Function to save the current tab URL
+savetabBtn.addEventListener("click", function(){
+    
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        myLeads.push(tabs[0].url)
+        localStorage.setItem("myLeads", JSON.stringify(myLeads))
+        render(myLeads)
+     });
+})
 ```
 
 ## Screenshots
